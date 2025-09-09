@@ -9,7 +9,7 @@ export default class Student extends Person {
         this._marks = [...value];
     }
 
-    constructor(marks) {
-        this.marks = marks;
+    constructor(options) {
+        this.marks = options?.marks ? options.marks : [];
     }
 }
